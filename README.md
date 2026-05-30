@@ -35,3 +35,4 @@ flutter run \
 - Reminder alarms scheduled exactly and restored on app relaunch/reboot
 - Offline medicine-log queue with deferred sync
 # Medi-alert
+# Medi-alert
