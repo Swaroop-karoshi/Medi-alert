@@ -1,0 +1,65 @@
+MediAlert: Application Overview & User Guide
+
+MediAlert is a premium, minimalist healthcare application designed to bridge the gap between doctors and patients, ensuring reliable medication adherence through intelligent scheduling and fail-safe reminders.
+
+---
+
+Core Features
+
+1. Dual-Role Architecture
+The app tailors its interface based on whether you are a Doctor or a Patient, providing distinct tools for healthcare management and medication tracking.
+
+2. Fail-Safe Medication Reminders (Patient)
+- Persistent Alarms: Uses high-priority Android alarm managers to trigger even if the app is closed or the device is asleep.
+- Insistent Notifications: Notifications act like a native clock alarm, requiring user interaction to ensure doses aren't missed.
+- Quick Actions: "Taken", "Skipped", or "Snooze" directly from the lock screen or alarm interface.
+
+3. Prescription Lifecycle Management
+- Smart Creation (Doctor): Doctors select medicines from their inventory, set dosages, and link them to meal slots (Before/After Breakfast, etc.).
+- Flexible Approval (Patient): Patients don't just "receive" a prescription; they approve it by setting their personal meal times, ensuring the schedule fits their lifestyle.
+- Real-Time Sync: Schedules are synchronized via Supabase to keep both doctor and patient updated on adherence.
+
+4. Inventory Tracking (Doctor)
+- Stock Monitoring: Manage medication inventory with "Low Stock" and "Critical" alerts.
+- Auto-Update: Stock levels can be configured to automatically decrement as prescriptions are issued.
+
+5. Advanced Analytics & Reporting
+- Adherence Charts: Visual reports showing "Taken" vs. "Missed" medications.
+- Compliance Monitoring (Doctor): Doctors can view a specific patient's adherence report to track their recovery progress.
+
+6. Battery & Stability Optimization
+- Dedicated Background Stability dashboard to help users configure OEM-specific settings (like Samsung’s battery optimization) to ensure the alarm service remains active.
+
+---
+
+User Guide: How to Use MediAlert
+
+For Doctors: Managing Your Practice
+1. Onboarding: Sign up and select the "Doctor" role.
+2. Inventory Setup: Go to the Inventory tab to add medications you commonly prescribe. Set "Low Stock" thresholds to get notified when you need to restock.
+3. Connecting with Patients:
+   - Navigate to Patient Management.
+   - Use your unique Doctor ID or QR Code to invite patients to your network.
+4. Prescribing:
+   - Select a patient and tap Add Prescription.
+   - Add medicine items, set the dosage (e.g., "1 Tablet"), and select the meal slot (e.g., "After Breakfast").
+   - Submit the prescription. It will stay "Pending" until the patient approves it.
+
+For Patients: Staying Healthy
+1. Onboarding: Sign up and select the "Patient" role.
+2. Connecting with your Doctor: 
+   - Accept the invitation from your doctor in the Home dashboard.
+3. Approving Medication:
+   - When you see a "Pending Prescription," tap on it.
+   - Review the medicines and Configure Your Schedule by choosing exactly what time you eat breakfast, lunch, and dinner.
+   - Tap Pay & Approve (if applicable) to activate your alarms.
+4. Managing Doses:
+   - When an alarm sounds, view the medicine and doctor details.
+   - Mark it as Taken immediately to update your progress.
+   - If you missed a dose, you can manually update its status in the Home timeline.
+5. Analytics: Check the Analytics tab to see your weekly adherence score. Aim for 100%!
+
+---
+
+Technical Stability Tip
+To ensure you never miss a dose, go to Settings > Background Stability and follow the instructions to "Disable Battery Optimization" and "Allow Auto-launch". This ensures the MediAlert alarm system remains "Always-On" in the background.

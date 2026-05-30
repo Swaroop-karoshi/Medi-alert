@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "490092075889",
+    "project_id": "medi-alert-b8191",
+    "storage_bucket": "medi-alert-b8191.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:490092075889:android:dd5bd566d8c26b77c774d0",
+        "android_client_info": {
+          "package_name": "com.medi.alert"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "490092075889-qgu4sa5cf3q2jfpn0gkl6dv94dh6cu5r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyArVflkdb8lJfIYoLrTVfgDhB4Nf6a2hcE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "490092075889-qgu4sa5cf3q2jfpn0gkl6dv94dh6cu5r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
